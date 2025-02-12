@@ -1,0 +1,29 @@
+<h1 style="color: darkblue;font-size: 40px; text-shadow: 3px 0 3px #07acb8; text-align: center;">𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜 𝒞𝒾𝓉𝒾 𝐵𝒶𝓃𝓀</h1>    
+<button class="btn btn-back" [routerLink]="['/employee-dashboard']">🏠 Back to Dashboard</button>
+      
+<div class="table-container">
+   
+   <table>
+      <thead>
+         <tr>
+            <th>🔢 Account No</th>
+            <th>👤 Account Holder Name</th>
+            <th>📞 Phone</th>
+            <th>💰 Account Balance</th>
+            <th>🔑 Account PIN</th>
+            <th colspan="2">⚙ Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+         <tr *ngFor="let i of customer">
+            <td>{{i.accNo}}</td>
+            <td>{{i.accHolderName}}</td>
+            <td>{{i.accphone}}</td>
+            <td>{{i.accbalance}}</td>
+            <td>{{i.accpin}}</td>
+            <td><button class="btn btn-primary p-3" [routerLink]="['/update-customer',i.accNo]">Update</button></td>
+            <td><button class="btn btn-danger p-3"  (click)="deleteHandler(i.accNo)">Delete</button></td>
+         </tr>
+      </tbody>
+   </table>
+</div>

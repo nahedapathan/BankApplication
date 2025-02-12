@@ -1,0 +1,104 @@
+/* Full-Screen Background */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Login Box Styling */
+.login-box {
+    background-color: rgba(0, 0, 0, 0.85); /* Dark, semi-transparent */
+    padding: 40px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    border: 2px solid #00ffff; /* Neon border */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+    position: relative;
+}
+
+/* Heading */
+.login-box h2 {
+    color: #00ffff;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+/* Input Fields */
+.form-control {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Home Button (Smaller Width & Positioned Above the Login Form) */
+.btn-neon-red {
+    background-color: #dc3545;
+    box-shadow: 0 0 15px rgba(220, 53, 69, 0.8);
+    width: 150px; /* Reduced Width */
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: none;
+    transition: all 0.3s ease;
+    color: white;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn-neon-red:hover {
+    background-color: #c82333;
+    box-shadow: 0 0 25px rgba(220, 53, 69, 1);
+    transform: translate(-50%, -2px);
+}
+
+/* Login Button */
+.btn-neon-blue {
+    background-color: #007bff;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.8);
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    border: none;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.btn-neon-blue:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 25px rgba(0, 123, 255, 1);
+    transform: translateY(-2px);
+}
+
+/* Error Message (Below Inputs) */
+.error-message {
+    color: #ff4444;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}

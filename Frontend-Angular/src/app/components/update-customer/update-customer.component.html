@@ -1,0 +1,29 @@
+<div class="update-customer-container">
+    <h2 class="update-heading">🔄 Update Customer</h2>
+
+    <form (ngSubmit)="updateCustomer()" class="update-form">
+        <div class="form-group">
+            <label>👤 Account Holder Name</label>
+            <input type="text" class="form-control" name="accHolderName" [(ngModel)]="customer.accHolderName" required>
+        </div>
+
+        <div class="form-group">
+            <label>📞 Phone</label>
+            <input type="number" class="form-control" name="accphone" [(ngModel)]="customer.accphone" required>
+        </div>
+
+        <div class="form-group">
+            <label>💰 Balance</label>
+            <input type="text" class="form-control" name="accbalance" [(ngModel)]="customer.accbalance" required>
+        </div>
+
+        <div class="form-group">
+            <label>🔑 PIN</label>
+            <input type="number" class="form-control" name="accpin" [(ngModel)]="customer.accpin" required>
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-update mt-3" type="submit">✅ Update Customer</button>
+        </div>
+    </form>
+</div>

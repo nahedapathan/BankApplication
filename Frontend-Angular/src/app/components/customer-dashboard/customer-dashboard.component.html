@@ -1,0 +1,32 @@
+<div class="dashboard-container">
+    <div class="dashboard-box">
+        <!-- Welcome Message -->
+        <h1 class="welcome-text">🏦 Welcome to Citi Bank, <span>{{ customer.accHolderName }}</span>!</h1>
+
+        <!-- Dashboard Cards -->
+        <div class="dashboard-grid">
+            <div class="dashboard-card" [routerLink]="['/profile']">
+                <h3>👤 Profile</h3>
+                <p>View your account details</p>
+            </div>
+            <div class="dashboard-card" [routerLink]="['/deposit']">
+                <h3>💰 Deposit</h3>
+                <p>Add funds to your account</p>
+            </div>
+            <div class="dashboard-card" [routerLink]="['/transfer']">
+                <h3>💸 Transfer</h3>
+                <p>Send money instantly</p>
+            </div>
+            <div class="dashboard-card" [routerLink]="['/update-pin']">
+                <h3>🔒 Update PIN</h3>
+                <p>Secure your account</p>
+            </div>
+        </div>
+
+        <!-- Logout Button -->
+        <button (click)="logout()" class="btn-logout">🚪 Logout</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">© 2025 Naheda Pathan | Citi Bank</footer>
+</div>

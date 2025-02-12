@@ -1,0 +1,89 @@
+/* 🌟 Customer Update Form Container */
+.update-customer-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+/* 🌟 Form Heading */
+.update-heading {
+    color: #007bff;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5);
+}
+
+/* 🌟 Form Styling */
+.update-form {
+    padding: 20px;
+}
+
+/* 🌟 Label Styling */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* 🌟 Input Field Styling */
+input.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+/* 🟢 Focus Effect */
+input.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* 🌟 Update Button */
+.btn-update {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #28a745;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-update:hover {
+    background: #218838;
+    box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+    transform: translateY(-2px);
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 768px) {
+    .update-customer-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .update-heading {
+        font-size: 24px;
+    }
+
+    .btn-update {
+        font-size: 16px;
+    }
+}

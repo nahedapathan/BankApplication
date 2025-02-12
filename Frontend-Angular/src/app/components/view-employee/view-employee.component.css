@@ -1,0 +1,102 @@
+.table-container {
+    width: 90%; /* Makes it fit within the page */
+    max-width: 1200px; /* Prevents it from being too wide */
+    margin: 20px auto; /* Centers the table */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+    border-radius: 10px; /* Rounded edges */
+    background: white; /* Ensures clear background */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+/* Table Header Styling */
+th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Table Cell Styling */
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Table Action Buttons */
+.btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Make Table Scrollable on Small Screens */
+@media (max-width: 768px) {
+    .table-container {
+        overflow-x: scroll; /* Enables scrolling */
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 14px; /* Smaller font for mobile */
+    }
+}
+.table-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow-y: auto;
+    max-height: 80vh; /* Ensure table fits within screen */
+    background: white;
+    border-radius: 10px;
+}
+
+/* Fix the table header to stay visible */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    position: relative;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background-color: #007bff; /* Blue background for visibility */
+    color: white;
+    z-index: 10; /* Ensures it's above table rows */
+}
+
+th {
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 2px solid white;
+}
+.btn-back {
+    background: #ff5722;
+    color: white;
+    width: 30%;
+    border-radius: 40px;
+    margin-left: 350px;
+    
+   
+}

@@ -1,0 +1,81 @@
+/* Ensure the background covers the entire screen */
+.background {
+   background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Neon-themed box design */
+.neon-box {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    padding: 40px;
+    border-radius: 15px;
+    width: 400px; /* Fixed width for the box */
+    border: 2px solid #00ffff; /* Neon cyan border */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6), /* Outer neon glow */
+                0 0 40px rgba(0, 255, 255, 0.4),
+                0 0 60px rgba(0, 255, 255, 0.2);
+    text-align: center;
+}
+
+/* Heading style */
+.neon-box h2 {
+    color: #00ffff; /* Neon cyan */
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Text glow */
+}
+
+/* Neon button styles */
+.btn-neon-blue, .btn-neon-green {
+    font-size: 16px;
+    padding: 12px 30px;
+    border-radius: 25px; /* Rounded buttons */
+    margin: 10px;
+    transition: all 0.3s ease; /* Smooth hover effect */
+    border: none;
+    color: white;
+    width: 80%; /* Make buttons wider */
+}
+
+.btn-neon-blue {
+    background-color: #007bff; /* Blue */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8); /* Neon glow */
+}
+
+.btn-neon-green {
+    background-color: #28a745; /* Green */
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.8); /* Neon glow */
+}
+
+/* Hover effects for buttons */
+.btn-neon-blue:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 1); /* Intensify glow */
+    transform: translateY(-2px); /* Slight lift */
+}
+
+.btn-neon-green:hover {
+    background-color: #218838;
+    box-shadow: 0 0 20px rgba(40, 167, 69, 1); /* Intensify glow */
+    transform: translateY(-2px); /* Slight lift */
+}
+
+/* Footer design */
+.footer {
+    position: absolute;
+    bottom: 20px;
+    color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}

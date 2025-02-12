@@ -1,0 +1,27 @@
+<div class="transaction-container">
+    <h1 style="color: darkblue;">𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜 𝒞𝒾𝓉𝒾 𝐵𝒶𝓃𝓀</h1>
+    <h2 class="transaction-heading">💸 Make Transaction</h2>
+
+    <!-- Back to Dashboard Button -->
+    <button class="btn dashboard-btn" [routerLink]="['/customer-dashboard']">🔙 Back to Dashboard</button>
+
+    <!-- Transaction Form -->
+    <form class="transaction-form" (ngSubmit)="transfer()">
+        <label class="form-label">📥 Enter Beneficiary Account No:</label>
+        <input type="number" [(ngModel)]="transferAccNo" name="transferAccNo" class="form-control" required>
+
+        <label class="form-label">💰 Enter Amount:</label>
+        <input type="number" [(ngModel)]="transferAmount" name="transferAmount" class="form-control" required>
+
+        <!-- Transfer Button -->
+        <button type="submit" class="btn transfer-btn">🚀 Transfer</button>
+    </form>
+
+    <!-- Message Alert -->
+    <p *ngIf="message" class="alert alert-info">{{ message }}</p>
+
+    <!-- Footer -->
+    <footer class="footer">
+        © 2025 Naheda Pathan | Citi Bank
+    </footer>
+</div>

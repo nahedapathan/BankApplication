@@ -1,0 +1,22 @@
+<div class="login-container">
+  <div class="login-box">
+    
+    <!-- Go to Home Button (Above the Login Form, Smaller Width) -->
+    <button routerLink="/" class="btn btn-neon-red">🏠Home</button>
+
+    <h2>Customer Login</h2>
+    
+    <input type="text" [(ngModel)]="accNo" placeholder="Account Number" class="form-control">
+    <input type="password" [(ngModel)]="accPin" placeholder="PIN" class="form-control">
+
+    <!-- Error Message (Below Inputs) -->
+    <p class="error-message" *ngIf="error">{{ error }}</p>
+
+    <button (click)="login()" class="btn btn-neon-blue">Login</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 Naheda Pathan | Banking System
+  </footer>
+</div>

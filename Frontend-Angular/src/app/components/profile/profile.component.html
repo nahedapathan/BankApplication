@@ -1,0 +1,20 @@
+<div class="profile-container">
+    <h1 class="bank-title">Welcome to Citi Bank</h1> <!-- Bold Welcome Message -->
+
+    <h2 class="profile-heading">Customer Profile</h2>
+
+    <div class="profile-card" *ngIf="customer">
+        <p><strong>Name:</strong> {{ customer.accHolderName }}</p>
+        <p><strong>Account Number:</strong> {{ customer.accNo }}</p>
+        <p><strong>Balance:</strong> ₹{{ customer.accbalance }}</p>
+        <p><strong>Phone:</strong> {{ customer.accphone }}</p>
+        <p><strong>PIN:</strong> {{ customer.accpin }}</p>
+    </div>
+
+    <button class="btn btn-primary back-btn" [routerLink]="['/customer-dashboard']">Back to Dashboard</button>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        © 2025 Naheda Pathan | Citi Bank
+    </footer>
+</div>

@@ -1,0 +1,99 @@
+/* Full Page Styling */
+body {
+    background: url('https://source.unsplash.com/1600x900/?bank,finance') no-repeat center center/cover;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Welcome Message */
+.welcome-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+/* Dashboard Box */
+.dashboard-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Dashboard Heading */
+.dashboard-card h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Cards Layout */
+.dashboard-content {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Card Styling */
+.card {
+    width: 250px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid transparent;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    border-color: #007bff;
+}
+
+/* Icons */
+.icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+/* Logout Icon Special Color */
+.logout-card .icon {
+    color: #dc3545;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    margin-top: 40px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+}

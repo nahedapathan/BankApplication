@@ -1,0 +1,42 @@
+<h1 style="color: darkblue;font-size: 40px; text-shadow: 3px 0 3px #07acb8; text-align: center;">𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜 𝒞𝒾𝓉𝒾 𝐵𝒶𝓃𝓀</h1>    
+<button class="btn btn-back" [routerLink]="['/admin-dashboard']">🏠 Back to Dashboard</button>
+  
+
+<div class="table-container">
+   <h2 class="table-title">🏦 Employee Details</h2>
+   
+   <table class="styled-table">
+       <thead>
+           <tr>
+               <th>🔢 ID</th>
+               <th>👤 Name</th>
+               <th>💼 Position</th>
+               <th>💰 Salary</th>
+               <th>👨‍💻 Username</th>
+               <th>🔑 Password</th>
+               <th colspan="2">⚙ Actions</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr *ngFor="let i of employee">
+               <td>{{ i.id }}</td>
+               <td>{{ i.name }}</td>
+               <td>{{ i.position }}</td>
+               <td>₹{{ i.salary }}</td>
+               <td>{{ i.username }}</td>
+               <td>{{ i.password }}</td>
+               <td>
+                   <button class="btn btn-primary p-3" [routerLink]="['/update-employee', i.id]">✏ Update</button>
+               </td>
+               <td>
+                   <button class="btn btn-danger p-3"  (click)="deleteHandler(i.id)">🗑 Delete</button>
+               </td>
+           </tr>
+       </tbody>
+   </table>
+
+   <!-- Footer -->
+  <footer class="footer">© 2025 Naheda Pathan | Citi Bank</footer>
+</div>
+
+

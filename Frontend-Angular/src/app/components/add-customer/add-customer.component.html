@@ -1,0 +1,38 @@
+<div class="customer-container">
+    <h1 style="color: darkblue;font-size: 40px; text-shadow: 3px 0 3px #07acb8;">𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜 𝒞𝒾𝓉𝒾 𝐵𝒶𝓃𝓀</h1>
+          
+    <div class="customer-box">
+        <button class="btn btn-back" [routerLink]="['/employee-dashboard']">🏠 Back to Dashboard</button>
+      
+        <h2 class="form-title">➕ Add Customer Data</h2>
+        <form (ngSubmit)="submitHandler()">
+            
+            <div class="form-group">
+                <label>👤 Account Holder Name</label>
+                <input type="text" class="form-control" name="accHolderName" [(ngModel)]="customer.accHolderName" required>
+            </div>
+
+            <div class="form-group">
+                <label>📞 Phone</label>
+                <input type="number" class="form-control" name="accphone" [(ngModel)]="customer.accphone" required>
+            </div>
+
+            <div class="form-group">
+                <label>💰 Balance</label>
+                <input type="text" class="form-control" name="accbalance" [(ngModel)]="customer.accbalance" required>
+            </div>
+
+            <div class="form-group">
+                <label>🔑 Pin</label>
+                <input type="number" class="form-control" name="accpin" [(ngModel)]="customer.accpin" required minlength="4" maxlength="4">
+            </div>
+
+            <div class="text-center">
+                <button class="btn btn-add">✔ Add Customer</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">© 2025 Naheda Pathan | Citi Bank</footer>
+</div>

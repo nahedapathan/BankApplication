@@ -1,0 +1,24 @@
+<div class="deposit-container">
+    <h1 style="color: darkblue;">𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜 𝒞𝒾𝓉𝒾 𝐵𝒶𝓃𝓀</h1>
+    <h2 class="deposit-heading">Deposit Amount</h2>
+
+    <!-- Dashboard Button -->
+    <button class="btn dashboard-btn" [routerLink]="['/customer-dashboard']">Dashboard</button>
+
+    <!-- Deposit Form -->
+    <form class="deposit-form" (ngSubmit)="deposit()">
+        <label class="form-label">Enter Amount:</label>
+        <input type="number" [(ngModel)]="depositAmount" name="depositAmount" class="form-control" required>
+
+        <!-- Deposit Button -->
+        <button type="submit" class="btn deposit-btn">Deposit</button>
+    </form>
+
+    <!-- Message Alert -->
+    <p *ngIf="message" class="alert alert-info">{{ message }}</p>
+
+    <!-- Footer -->
+    <footer class="footer">
+        © 2025 Naheda Pathan | Citi Bank
+    </footer>
+</div>

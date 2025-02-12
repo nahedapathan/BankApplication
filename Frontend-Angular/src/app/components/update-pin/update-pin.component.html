@@ -1,0 +1,24 @@
+<div class="update-container">
+    <h1 style="color: darkblue;">𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜 𝒞𝒾𝓉𝒾 𝐵𝒶𝓃𝓀</h1>
+    <h2 class="update-heading">🔒 Update PIN</h2>
+
+    <!-- Back to Dashboard Button -->
+    <button class="btn dashboard-btn" [routerLink]="['/customer-dashboard']">🔙 Back to Dashboard</button>
+
+    <!-- Update PIN Form -->
+    <form class="update-form" (ngSubmit)="updatePin()">
+        <label class="form-label">🔑 Enter New PIN (4 digits):</label>
+        <input type="password" [(ngModel)]="newPin" name="newPin" class="form-control" required minlength="4" maxlength="4">
+
+        <!-- Update PIN Button -->
+        <button type="submit" class="btn update-btn">🔄 Update PIN</button>
+    </form>
+
+    <!-- Message Alert -->
+    <p *ngIf="message" class="alert alert-info">{{ message }}</p>
+
+    <!-- Footer -->
+    <footer class="footer">
+        © 2025 Naheda Pathan | Citi Bank
+    </footer>
+</div>

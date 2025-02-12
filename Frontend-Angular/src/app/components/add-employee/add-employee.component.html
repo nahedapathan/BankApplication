@@ -1,0 +1,39 @@
+<h1 style="color: darkblue;font-size: 40px; text-shadow: 3px 0 3px #07acb8;">𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜 𝒞𝒾𝓉𝒾 𝐵𝒶𝓃𝓀</h1>
+<div class="form-container">
+   
+          
+    
+        <button class="btn btn-back" [routerLink]="['/admin-dashboard']">🏠 Back to Dashboard</button>
+      
+    <h2 class="form-title">👤 Add Employee Data</h2>
+    <form (ngSubmit)="submitHandler()">
+        <div class="form-group">
+            <label>Account Holder Name</label>
+            <input type="text" class="form-control" name="name" [(ngModel)]="employee.name" placeholder="Enter Full Name">
+        </div>
+
+        <div class="form-group">
+            <label>Position</label>
+            <input type="text" class="form-control" name="position" [(ngModel)]="employee.position" placeholder="Enter Position">
+        </div>
+
+        <div class="form-group">
+            <label>Salary</label>
+            <input type="number" class="form-control" name="salary" [(ngModel)]="employee.salary" placeholder="Enter Salary">
+        </div>
+
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" class="form-control" name="username" [(ngModel)]="employee.username" placeholder="Enter Username">
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password" [(ngModel)]="employee.password" placeholder="Enter Password">
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-success mt-2" type="submit">➕ Add Employee</button>
+        </div>
+    </form>
+</div>
